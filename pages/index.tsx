@@ -1,4 +1,11 @@
-import { Box, Container, useColorModeValue, VStack } from '@chakra-ui/react';
+import {
+  Box,
+  Container,
+  Flex,
+  Text,
+  useColorModeValue,
+  VStack,
+} from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Layout from '../components/layouts/applayout';
@@ -14,7 +21,18 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Layout>
-        <ThemeButton />
+        <Flex gap={'1rem'}>
+          <VStack h={'100%'} width={'fit-content'}>
+            <ThemeButton />
+          </VStack>
+          <VStack width={'30%'} bgColor={'green'}>
+            <Box bg={'red'}>hello</Box>
+            <Text>Hello</Text>
+            <Text>Hello</Text>
+            <Text>Hello</Text>
+          </VStack>
+          <Box>Hello</Box>
+        </Flex>
       </Layout>
     </Box>
   );

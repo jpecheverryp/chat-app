@@ -1,4 +1,5 @@
-import { Container, useColorModeValue } from '@chakra-ui/react';
+import { Container, Flex, useColorModeValue, VStack } from '@chakra-ui/react';
+import ThemeButton from '../ThemeButton';
 
 type Props = {
   children: JSX.Element;
