@@ -8,6 +8,7 @@ import {
 } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import ContactCard from '../components/ContactCard';
 import Layout from '../components/layouts/applayout';
 import ThemeButton from '../components/ThemeButton';
 import styles from '../styles/Home.module.css';
@@ -25,11 +26,10 @@ const Home: NextPage = () => {
           <VStack h={'100%'} width={'fit-content'}>
             <ThemeButton />
           </VStack>
-          <VStack width={'30%'} bgColor={'green'}>
-            <Box bg={'red'}>hello</Box>
-            <Text>Hello</Text>
-            <Text>Hello</Text>
-            <Text>Hello</Text>
+          <VStack width={'25%'} py={'1rem'}>
+            <ContactCard name='Juan' />
+            <ContactCard name='Melissa' />
+            <ContactCard name='Andres' />
           </VStack>
           <Box>Hello</Box>
         </Flex>
